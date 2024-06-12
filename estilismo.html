@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sobrenosotras.html"><button class="btn-lila">Nosotras</button></a></li>
+                <li><a href="servicios.html"><button class="btn-lila">Servicios</button></a></li>
+                <li><a href="contacto.html"><button class="btn-lila">Contacto</button></a></li>
+                <li><a href="galeria.html"><button class="btn-lila">Galería</button></a></li>
+                <li><a href="index.html"><button class="btn-lila">Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicio-detalle">
+            <h1>Estilismo</h1>
+            <p>Creamos tu campaña para elevar tu marca y llevarla al siguiente nivel. Teniendo en cuenta las tendencias en las nuevas formas de comunicación y estilismos.</p>
+            <img src="imagenes/imagenparaapartadoestilismo.jpeg" alt="Estilismo" class="imagenparaapartadoestilismo">
+            <p>Optar por la locación, contratar al equipo, realizar prueba de vestuario, armado de estilismo y muchas cosas más son parte de nuestro trabajo para que no te tengas que preocupar a la hora de realizar una producción fotográfica.</p>
+    </main>
+    
+    <footer>
+        <a href="https://www.instagram.com/stveintidos/">Síguenos en Instagram</a>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-logo" target="_blank">
+        <img src="imagenes/logo-whatsapp.png" alt="WhatsApp Logo">
+    </a>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

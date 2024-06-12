@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="sobrenosotras.html"><button class="btn-lila">Nosotras</button></a></li>
+                <li><a href="servicios.html"><button class="btn-lila">Servicios</button></a></li>
+                <li><a href="contacto.html"><button class="btn-lila">Contacto</button></a></li>
+                <li><a href="galeria.html"><button class="btn-lila">Galería</button></a></li>
+                <li><a href="index.html"><button class="btn-lila">Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="servicio-detalle">
+            <h1>ASESORÍAS</h1>
+            <p>Te ayudamos a resolver cualquier inconveniente que tengas a la hora de afrontar la comunicación de tu marca.</p>
+            <img src="imagenes/imagenparaapartadoasesorias.jpeg" alt="Modelo" class="imagenparaapartadoasesorias">
+            <p>
+                Comunícate con nosotras para comentarnos en que parte de tu negocio estas estancado y no podes avanzar. Tras tres años de experiencia en este rubro contamos con herramientas necesarias para asesorarte y acompañarte a buscar una solución.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="https://www.instagram.com/stveintidos/">Síguenos en Instagram</a>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-logo" target="_blank">
+        <img src="imagenes/logo-whatsapp.png" alt="WhatsApp Logo">
+    </a>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
